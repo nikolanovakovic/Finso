@@ -85,7 +85,7 @@ return array(
         'exception_template'       => 'error/index',
         'template_map' => array(
             'layout/layout'           => __DIR__ . '/../view/layout/layout.phtml',
-            'application/index/index' => __DIR__ . '/../view/application/index/index.phtml',
+            'application/home/index' => __DIR__ . '/../view/application/index/index.phtml',
             'application/home/user' => __DIR__ . '/../view/application/index/user.phtml',
             'application/home/form' => __DIR__ . '/../view/application/index/user.phtml',
             'application/home/company' => __DIR__ . '/../view/application/index/user.phtml',
