@@ -10,11 +10,11 @@
 return array(
     'router' => array(
         'routes' => array(
-            'home' => array(
-                'type' => 'segment',                    //ukoliko treba da pokazuje kao novu grupu stranica onda je modul, tj. modul je stranica a sve u okviru jedne su njene akcije
+            'home' => array(                             //tj. modul je stranica a sve u okviru jedne su njene akcije
+                'type' => 'segment',                    //ukoliko treba da pokazuje kao novu grupu stranica onda je modul,
                 'options' => array(                    //prikazuje putanju do stranice preko action dodat u kontroler
-                    'route'    => '/home[/][:action]', //jedan kontroler moze imati vise akcija koje predstavljaju nove stranice, u nasem slucaju >> Finso/user
-                    'constraints' => array(
+                    'route'    => '/home[/][:action]', //jedan kontroler moze imati vise akcija koje predstavljaju nove stranice,
+                    'constraints' => array(             //u nasem slucaju >> Finso/user
                     		'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
                     		'id'     => '[0-9]+',
                     ),
@@ -87,7 +87,7 @@ return array(
             'layout/layout'           => __DIR__ . '/../view/layout/layout.phtml',
             'application/home/index' => __DIR__ . '/../view/application/index/index.phtml',
             'application/home/user' => __DIR__ . '/../view/application/index/user.phtml',
-            'application/home/form' => __DIR__ . '/../view/application/index/user.phtml',
+            'application/home/form' => __DIR__ . '/../view/application/index/forms.phtml',
             'application/home/company' => __DIR__ . '/../view/application/index/user.phtml',
             'application/home/support' => __DIR__ . '/../view/application/index/user.phtml',
             'error/404'               => __DIR__ . '/../view/error/404.phtml',
